@@ -1,8 +1,13 @@
 module.exports = {
-  purge: [
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}"
-  ],
+  purge: {
+    content: [
+      "./index.html",
+      "./src/**/*.{vue,js,ts,jsx,tsx}"
+    ],
+    options: {
+      safelist: ['dark']
+    }
+  },
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}"
@@ -11,5 +16,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-  darkMode: 'class',
+  darkMode: 'class'
 }
