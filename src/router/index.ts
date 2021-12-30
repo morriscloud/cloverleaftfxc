@@ -1,5 +1,9 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
+import Leaderboard from '../views/Leaderboard.vue'
+import Meets from '../views/Meets.vue'
+import Roster from '../views/Roster.vue'
+import Seasons from '../views/Seasons.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -10,34 +14,22 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/leaderboard',
     name: 'Leaderboard',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Leaderboard.vue')
+    component: Leaderboard
   },
   {
     path: '/seasons',
     name: 'Seasons',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Seasons.vue')
+    component: Seasons
   },
   {
     path: '/roster',
     name: 'Roster',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Roster.vue')
+    component: Roster
   },
   {
     path: '/meets',
     name: 'Meets',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Meets.vue')
+    component: Meets
   }
 ]
 
