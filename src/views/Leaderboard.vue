@@ -1,14 +1,6 @@
 <template>
-  <div>
-    LEADERBOARD
-  </div>
+  <table></table>
 </template>
 
-<script lang="ts">
-
-import { defineComponent } from "vue"
-
-export default defineComponent({
-  name: "Leaderboard"
-});
+<script setup lang="ts">
 </script>

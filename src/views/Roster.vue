@@ -4,11 +4,5 @@
   </div>
 </template>
 
-<script lang="ts">
-
-import { defineComponent } from "vue"
-
-export default defineComponent({
-  name: "Roster"
-});
+<script setup lang="ts">
 </script>

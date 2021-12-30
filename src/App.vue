@@ -4,20 +4,12 @@
   <TheContent>
     <router-view></router-view>
   </TheContent>
+  <TheFooter></TheFooter>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script setup lang="ts">
 import TheTopNav from './components/TheTopNav.vue';
 import TheHeader from './components/TheHeader.vue';
 import TheContent from './components/TheContent.vue';
-
-export default defineComponent({
-  name: "App",
-  components: {
-    TheTopNav,
-    TheHeader,
-    TheContent
-  }
-});
+import TheFooter from './components/TheFooter.vue';
 </script>
