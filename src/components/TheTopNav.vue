@@ -67,9 +67,9 @@ import { defineProps } from 'vue'
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Leaderboard', href: 'leaderboard' },
-  { name: 'Seasons', href: 'seasons' },
-  { name: 'Roster', href: 'roster' },
-  { name: 'Meets', href: 'meets' },
+  // { name: 'Seasons', href: 'seasons' },
+  // { name: 'Roster', href: 'roster' },
+  // { name: 'Meets', href: 'meets' },
 ];
 
 defineProps({
