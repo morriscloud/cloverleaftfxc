@@ -772,3 +772,4 @@ sketch
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/csharp,visualstudio,visualstudiocode,react,node
+/api/CloverleafTrack.Api/CloverleafTrack.Api/appsettings.Development.json
