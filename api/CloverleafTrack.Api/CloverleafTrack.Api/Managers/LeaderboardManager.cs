@@ -12,13 +12,15 @@ namespace CloverleafTrack.Api.Managers
         private readonly RunningRelayEventManager runningRelayEventManager;
         private readonly FieldEventManager fieldEventManager;
         private readonly FieldRelayEventManager fieldRelayEventManager;
+        private readonly RunningPerformanceManager runningPerformanceManager;
 
-        public LeaderboardManager(RunningEventManager runningEventManager, RunningRelayEventManager runningRelayEventManager, FieldEventManager fieldEventManager, FieldRelayEventManager fieldRelayEventManager)
+        public LeaderboardManager(RunningEventManager runningEventManager, RunningRelayEventManager runningRelayEventManager, FieldEventManager fieldEventManager, FieldRelayEventManager fieldRelayEventManager, RunningPerformanceManager runningPerformanceManager)
         {
             this.runningEventManager = runningEventManager;
             this.runningRelayEventManager = runningRelayEventManager;
             this.fieldEventManager = fieldEventManager;
             this.fieldRelayEventManager = fieldRelayEventManager;
+            this.runningPerformanceManager = runningPerformanceManager;
         }
 
         public async Task<LeaderboardDto> GetForGenderAsync(Gender gender)
